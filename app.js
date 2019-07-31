@@ -17,7 +17,7 @@ app.get("/references", function(req, res){
 
 app.get("/solutions", function(req, res){
   var company = faker.company;
-  res.render("solutions.html", {"companyName":company.companyName(), "companyDescription": company.catchPhrase(), "companyImg": faker.image.business()});
+  res.render("solutions.html", {"companyName":company.companyName(), "companyDescription": company.catchPhrase(), "companyImg": faker.image.business(), "companyUrl" ; faker.internet.url()});
 });
 
 app.get("/tutorials", function(req, res){
