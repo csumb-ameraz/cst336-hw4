@@ -1,0 +1,33 @@
+<% include partials/header.ejs %>  
+<div id="content">
+    <div class="image">
+      <img src="/img/computer.jpg" class="contentImage" alt="Computer Coding Image" />
+      Computer Image <a href="https://www.pexels.com/photo/computer-macbook-pro-programmer-programming-957424/" target="_blank">Source</a>
+    </div> 
+    <h1>
+      Home Page
+    </h1>
+    <h3>
+      What are build environments?
+    </h3>
+    <span>Build environments are used to help speed up the web development process 
+      by automating steps involved when building a website. The automation takes away steps needed to make changes
+      on full websites, making coding easier and consistent throughout a web page.</span>
+    
+    <h3>
+      How is this done?
+    </h3>
+    <span>Build environments are scripts that can be modified to run tasks and monitors changes within certain files of your project. These may include css files and javascript files, or changes to a particular folder. This then makes the change to all of the files within the project that has a certain tag and allows for all pages to remain consistent.</span>
+    
+    <h3>
+      What are some popular build environments?
+    </h3>
+    <span>Two of the most popular task build environments are <strong><i><u>Gulp.js</u></i></strong> and <strong><i><u>Grunt</u></i></strong>. They both automate the process by using tasks to help build the applications based on the settings you provide.</span>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $("[href = '/']").addClass("active");
+  });
+  </script>
+<% include partials/footer.ejs %>

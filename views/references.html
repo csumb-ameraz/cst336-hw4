@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>  
+
+  <div id="content">
+    <h1>
+      References
+    </h1>
+    <span>Here are some references that were used in this website. </span>
+    <h3>
+      Videos
+    </h3>
+    <ul>
+      <li><strong>Gulp: </strong><a href="https://www.youtube.com/watch?v=1rw9MfIleEg">https://www.youtube.com/watch?v=1rw9MfIleEg</a></li>
+      <li><strong>Grunt: </strong><a href="https://www.youtube.com/watch?v=KAD-l__vek4&list=PL4cUxeGkcC9j85fkVyCzCMJDfteLtrl_y">https://www.youtube.com/watch?v=KAD-l__vek4&list=PL4cUxeGkcC9j85fkVyCzCMJDfteLtrl_y</a></li>
+    </ul>
+    
+    <h3>
+      Build Tools
+    </h3>
+    <ul>
+      <li><strong>Gulp: </strong><a href="https://gulpjs.com/">https://gulpjs.com/</a></li>
+      <li><strong>Grunt: </strong><a href="https://gruntjs.com/">https://gruntjs.com/</a></li>
+    </ul>
+    
+    <img src="/img/thankYou.jpg" id="references" alt="Thank You" />
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $("[href = '/references']").addClass("active");
+  });
+  </script>
+<% include partials/footer.ejs %>

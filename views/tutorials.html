@@ -1,0 +1,25 @@
+<% include partials/header.ejs %>  
+
+  <div id="content"> 
+    <h1>
+      Tutorials
+    </h1>
+    <span>Although working with the documentation is very helpful for these two build environments, I believe that using a tutorial is the best way to get quick instructions on these tools and get yourself working hands on in these environments.</span>
+    
+    <h2>
+      Gulp.js Crash Course
+    </h2>
+    <iframe width="676" height="380" src="https://www.youtube.com/embed/1rw9MfIleEg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h2>
+      Grunt Tutorial
+    </h2>
+    <iframe width="676" height="380" src="https://www.youtube.com/embed/KAD-l__vek4?list=PL4cUxeGkcC9j85fkVyCzCMJDfteLtrl_y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $("[href = '/tutorials']").addClass("active");
+  });
+  </script>
+<% include partials/footer.ejs %>

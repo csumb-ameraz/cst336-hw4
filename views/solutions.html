@@ -1,0 +1,52 @@
+<% include partials/header.ejs %>  
+
+  <div id="content"> 
+    <h1>
+      Solutions
+    </h1>
+    
+    <table>
+      <tr>
+        <td>Solution</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>
+          <h3>
+            Gulp.js
+          </h3>
+          <img src="/img/gulp.png" alt="Gulp"> 
+          <a href="https://gulpjs.com/" target="_blank">Click for more details</a>
+        </td>
+        <td>Gulp works by not having to work with builds and you are able to focus on the code itself for your project. It also works with plugins and with node to work on building projects quickly and effortlessly. These are great when working with teams on projects.</td>
+      </tr>
+      <tr>
+        <td>
+          <h3>
+            Grunt
+          </h3>
+          <img src="/img/grunt.png" alt="Grunt"> 
+          <a href="https://gruntjs.com/" target="_blank">Click for more details</a>
+        </td>
+        <td>Build your application using Grunt by using automation to build your websites. Grunt is compatible with various plugins such as SASS, LESS, and JS Hint to help make building faster and automated instead of reinventing the wheel.</td>
+      </tr>
+      
+      <tr>
+        <td>
+          <h3>
+            <%=companyName %>
+          </h3>
+          <img src="<%=companyImg %>" alt="<%=companyName %>"> 
+          <a href="https://gruntjs.com/" target="_blank">Click for more details</a>
+        </td>
+        <td><%=companyDescription %></td>
+      </tr>
+    </table>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $("[href = '/solutions']").addClass("active");
+  });
+  </script>
+<% include partials/footer.ejs %>
